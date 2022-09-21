@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+<style>
+    .btn{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+       margin-left: 50px;
+       margin-right: 50px;
+    }
+
+
+.btn-1{
+    color: rgb(113, 102, 139);
+    cursor: pointer;
+    font-weight:bold;
+    
+}
+    .btn-1:hover{
+        color: rgb(238, 23, 216);
+       transform: scale(1.3);
+       transition: 0.3s;
+      
+      
+    }
+    .bulb{
+
+        display:inline-block;
+        border: 2px solid rgb(83, 202, 210);
+        border-radius: 10px;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        margin-left: 10%;
+        margin-top: 5%;
+        
+    }
+</style>
+  
+</head>
+<body>
+    <div class="bulb">
+        <img id="bulb-off" src="./on1.jpg" alt="off" height="350px" width="250px" >
+     
+   
+    <div class="btn">
+        
+    <button class="btn-1" onclick="myon()">ON</button>
+    <button class="btn-1" onclick="myoff()">OFF</button>
+</div>
+
+   </div>
+</body>
+
+   <script>
+    function myon(){
+        document.getElementById("bulb-off").src="off1.jpg";
+    }
+
+    function myoff(){
+        document.getElementById("bulb-off").src="on1.jpg";
+    }
+   </script>
+</html>
